@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>GitHub Finder</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h4>Search GitHub Users</h4>
+            <p class="para">Enter a username to fetch a user profile and repository</p>
+            <form>
+              <input type="text" name="user" id="user-input" class="form-control"
+                placeholder="type a user name to find in GitHub">
+            </form>
+          </div>
+        </div><!-- .card -->
+      </div>
+    </div><!-- .row -->
+    <div class="card mt-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <img src="#" alt="user image" id="user-img" width="100%">
+            <a href="" class="btn btn-primary mt-2 d-block profile-link">View Profile</a>
+          </div>
+          <div class="col-md-8 col-sm-8">
+            <div>
+              <button type="button" class="btn btn-primary btn-sm" id="repos">Public Repos :</button>
+              <button type="button" class="btn btn-info btn-sm" id="gists">Public Gists: </button>
+              <button type="button" class="btn btn-secondary btn-sm" id="followers">Followers:</button>
+              <button type="button" class="btn btn-success btn-sm" id="following">Following:</button>
+            </div>
+            <ul class="list-group mt-2">
+              <li class="list-group-item" id="company">Company: </li>
+              <li class="list-group-item" id="blog">Website/Blog: </li>
+              <li class="list-group-item" id="location">Location: </li>
+              <li class="list-group-item" id="since">Member-since: </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!-- card -->
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <h5>Latest Repository</h5>
+        <ul class="list-group" id="latestRepo">
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
